@@ -1,5 +1,7 @@
 'use client'
 
+import Content from '@/sections/Content';
+import Tp from '@/sections/Tp';
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
@@ -54,9 +56,12 @@ export default function Home() {
 
 
   return (
-    <div ref={containerRef} className="content-wrapper h-[953px] w-screen relative">
-      <div className="loading absolute w-screen bg-black flex justify-center items-center transition-[opacity 0.5s]">
+    <>
+      <div ref={containerRef} className="content-wrapper h-[953px] w-screen relative">
+        <Content />
+        <Tp />
       </div>
-    </div>
+    </>
+
   );
 }
