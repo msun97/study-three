@@ -9,11 +9,11 @@ const Content = () => {
               <Logo />
             </div>
         </div> 
-        <div className="content">
+        <div className="content hidden">
           <div className='header'>
-            <div className='header-logo'>
+            {/* <div className='header-logo w-0 h-'>
               <Logo />
-            </div>
+            </div> */}
           </div>
           <div className='section-wrap'>
             <div className='scroll'>
